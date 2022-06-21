@@ -10,6 +10,31 @@ class Home extends StatefulWidget {
 class _HomeStatefulWNameState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        //  title: const Text('Stepper'),
+        actions: <Widget>[
+          Stepper(
+            type: StepperType.horizontal,
+            steps: getSteps(),
+          )
+        ],
+      ),
+    );
   }
+
+  List<Step> getSteps() => [
+        Step(
+          title: Text('Account'),
+          content: Container(),
+        ),
+        Step(
+          title: Text('Account'),
+          content: Container(),
+        ),
+        Step(
+          title: Text('Account'),
+          content: Container(),
+        ),
+      ];
 }
