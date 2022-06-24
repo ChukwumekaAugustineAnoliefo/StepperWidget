@@ -13,12 +13,12 @@ class Main extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Stepper Widget',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xFF16171D),
+        scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255),
         colorScheme: ColorScheme.fromSwatch().copyWith(
           // or from RGB
 
-          primary: const Color(0xFF16171D),
-          secondary: const Color(0xFF16171D),
+          primary: Color.fromARGB(255, 255, 255, 255),
+          secondary: Color.fromARGB(255, 243, 245, 255),
         ),
       ),
       home: Home(),
